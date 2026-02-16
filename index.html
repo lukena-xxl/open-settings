@@ -7,29 +7,13 @@
 </head>
 <body style="font-family:sans-serif; text-align:center; padding:40px;">
 
-  <h2>📍 Разрешение геолокации</h2>
-  <p>Нажмите кнопку ниже, чтобы открыть настройки приложения</p>
+  <h2>Портал поиска</h2>
+  <p>Нажмите кнопку ниже, чтобы открыть приложение</p>
 
-  <button
-    onclick="openSettings()"
-    style="display:inline-block; padding:16px 32px; background:#4285f4; color:white; border-radius:8px; border:none; font-size:18px; cursor:pointer;">
-    Открыть настройки
-  </button>
-
-  <p style="color:gray; font-size:13px; margin-top:20px;">
-    ⚠️ Работает только на Android в Chrome
-  </p>
-
-  <script>
-    function openSettings() {
-      const intent = "intent:#Intent" +
-        ";action=android.settings.APPLICATION_DETAILS_SETTINGS" +
-        ";data=package:com.google.android.googlequicksearchbox" +
-        ";end;";
-
-      window.location.href = intent;
-    }
-  </script>
+  <a href="market://launch?id=com.google.android.googlequicksearchbox"
+   style="display:inline-block; padding:16px 32px; background:#4285f4; color:white; border-radius:8px; text-decoration:none; font-size:18px;">
+  Открыть Портал поиска
+</a>
 
 </body>
 </html>
